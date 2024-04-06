@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(imagenes/madera.jpg);
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    border: 2px solid #3a3a3a;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #3d3d3d;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.display {
+    background-color: #969878;
+    margin: 10px 0 20px 0;
+    padding: 10px;
+    font-size: 26px;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    box-shadow: 3px 3px inset rgba(0, 0, 0, 0.4);
+    text-align: right;
+    justify-self: start;
+}
+
+.keys {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "clear  raiz   expo   div"
+        "siete  ocho   nueve  mult"
+        "cuatro cinco  seis   menos"
+        "uno    dos    tres   mas"
+        "cero   punto  igual  mas";
+    grid-gap: 5px;
+}
+
+.clear-display {
+    grid-area: clear;
+}
+
+.bot-raiz {
+    grid-area: raiz;
+}
+
+.bot-expo {
+    grid-area: expo;
+}
+
+.bot-div {
+    grid-area: div;
+}
+
+.bot-7 {
+    grid-area: siete;
+}
+
+.bot-8 {
+    grid-area: ocho;
+}
+
+.bot-9 {
+    grid-area: nueve;
+}
+
+.bot-mult {
+    grid-area: mult;
+}
+
+.bot-4 {
+    grid-area: cuatro;
+}
+
+.bot-5 {
+    grid-area: cinco;
+}
+
+.bot-6 {
+    grid-area: seis;
+}
+
+.bot-menos {
+    grid-area: menos;
+}
+
+.bot-1 {
+    grid-area: uno;
+}
+
+.bot-2 {
+    grid-area: dos;
+}
+
+.bot-3 {
+    grid-area: tres;
+}
+
+.bot-mas {
+    grid-area: mas;
+    grid-row: span 2;
+}
+
+.bot-0 {
+    grid-area: cero;
+}
+
+.bot-punto {
+    grid-area: punto;
+}
+
+.bot-igual {
+    grid-area: igual;
+}
+
+.keys button {
+    background-color: #b6b1a0;
+    padding: 8px;
+    font-size: 18px;
+    border: none;
+    border-radius: 3px 3px 8px 8px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+    margin-top: 1px;
+    font-weight: 700;
+    margin: 1px;
+}
+
+.keys button:active {
+    box-shadow: none;
+    transform: scale(98%);
+}
