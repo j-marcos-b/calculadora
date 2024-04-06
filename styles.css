@@ -30,7 +30,6 @@ body {
     font-style: normal;
     box-shadow: 3px 3px inset rgba(0, 0, 0, 0.4);
     text-align: right;
-    justify-self: start;
 }
 
 .keys {
